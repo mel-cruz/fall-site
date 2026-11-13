@@ -14,6 +14,14 @@ body {
     color: #f2e6c6;
 }
 
+/* header {
+  margin: 3px;
+} */
+
+nav {
+  margin-bottom: 7.5px;
+  font-size:25px;
+}
 h1 {
     font-size: 50px;
     margin: 0 0 0.75rem;
@@ -57,6 +65,7 @@ ul {
     border-bottom-color:  #c75146;
     border-radius: 4px;
 }
+
 
 
 /* leaves */
