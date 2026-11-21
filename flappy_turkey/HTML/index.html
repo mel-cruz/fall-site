@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Flappy Turkey</title>
+	<title>LÖVE Game</title>
 	<style type="text/css">
 html, body
 {
@@ -21,17 +21,6 @@ html, body
 	border-bottom: 21px solid transparent;
 	box-sizing: border-box;
 }
-#title
-{
-	background-color: #ea316e;
-	margin: 9px;
-	padding: .8em;
-	border: 1px solid black;
-	border-radius: 10px;
-	box-shadow: 3px 3px 0 0 rgba(0,0,0,0.3);
-	text-align: center;
-	color: #f5f5f5;
-}
 #main
 {
 	background-color: #b1e3fa;
@@ -41,8 +30,6 @@ html, body
 	border-radius: 10px;
 	box-shadow: 3px 3px 0 0 rgba(0,0,0,0.3);
 }
-#main a { color: #526ffc; }
-#main a:hover, #main a:active { color: #f2f2f2; background: #ea316e; }
 #footer
 {
 	background-color: #b1e3fa;
@@ -65,9 +52,7 @@ html, body
 </head>
 <body>
 <div id="wrapper">
-	<h1 id="title">Flappy Turkey</h1>
 	<div id="main">
-		<center style="margin-bottom:10px">An unfinished flappy bird clone</center>
 		<center><canvas id="canvas" width="800" height="600" style="max-width:100%;background:#000;vertical-align:middle"></canvas></center>
 	</div>
 </div>
@@ -113,7 +98,7 @@ var DoLoad = function()
 {
 	Msg(TXT.LOAD);
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', 'Flappy_Turkey.js');
+	xhr.open('GET', 'FLAPPY_HTML.js');
 	xhr.onprogress = function(e)
 	{
 		if (!e.lengthComputable || ctx.pCnt++ < 5) return;
